@@ -2,7 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 /* common styles or utilities */
+html {
+  scroll-behavior: smooth;
+}
 body {
+  margin: 0%;
   font-family: "Poppins", sans-serif;
   background-color: #f3f1ff;
 }
@@ -22,7 +26,49 @@ hr {
   border: 1px solid #d1d1d1;
   margin-bottom: 25px;
 }
+/*-----------------
+ header styles
+ -----------------*/
+nav {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background-color: #562eff;
+}
+.menu {
+  width: 870px;
+  display: flex;
+  margin: auto;
+  padding-top: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.main-logo img {
+  width: 40px;
+  height: 50px;
+}
 
+.logo-name a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+.menu-items a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  padding-right: 35px;
+  font-weight: 700;
+}
 /* --------------
 top players styles
 ----------------- */
